@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "start": "npm run dev && git add . && git commit -am'save' && git push origin main",
+    "deploy":"git add . && git commit -am'save' && git push origin main",
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview"
