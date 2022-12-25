@@ -5,6 +5,10 @@
   "type": "module",
   "scripts": {
     "start": "npm run dev",
+    "add": "git add .",
+    "commit":"git commit -am'save'",
+    "push": "git push origin main",
+    "deploy":"npm run add && npm run commit && npm run push",
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview"
