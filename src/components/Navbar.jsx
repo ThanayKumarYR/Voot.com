@@ -25,7 +25,7 @@ const Navbar = () => {
           Upgrade
         </button>
       </div>
-      {/* <div className="nav-link">
+      <div className="nav-link">
         <NavLink NavLink to='/'>
             <span >My Voot</span>
         </NavLink>
@@ -51,7 +51,7 @@ const Navbar = () => {
             <AiOutlineSearch />
             <CgProfile />
         </div>
-      </div> */}
+      </div>
     </div>
   );
 };
