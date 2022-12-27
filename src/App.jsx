@@ -1,4 +1,4 @@
-import React from "react";
+import React,{Suspense} from "react";
 import { lazyLoad } from "./lazyload.js";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 const Home = lazyLoad("./pages/Home.jsx");
@@ -13,25 +13,27 @@ const Footer = lazyLoad("./components/Footer.jsx");
 
 function App() {
   return (
-    <BrowserRouter>
-      <div>
+    <div>
+      <BrowserRouter>
         <header>
           <Navbar />
         </header>
         <main>
-          <Routes>
-            <Route exact path="/" element={<Home />} />
-            <Route exact path="/Premium" element={<Premium />} />
-            <Route exact path="/Shows" element={<Shows />} />
-            <Route exact path="/Movies" element={<Movies />} />
-            <Route exact path="/Kids" element={<Kids />} />
-            <Route exact path="/Sports" element={<Sports />} />
-            <Route exact path="/Channels" element={<Channels />} />
-          </Routes>
+          <Suspense fallback={<h1>Loading...</h1>}>
+            <Routes>
+              <Route exact path="/" element={<Home />} />
+              <Route exact path="/Premium" element={<Premium />} />
+              <Route exact path="/Shows" element={<Shows />} />
+              <Route exact path="/Movies" element={<Movies />} />
+              <Route exact path="/Kids" element={<Kids />} />
+              <Route exact path="/Sports" element={<Sports />} />
+              <Route exact path="/Channels" element={<Channels />} />
+            </Routes>
+          </Suspense>
         </main>
         <Footer />
-      </div>
-    </BrowserRouter>
+      </BrowserRouter>
+    </div>
   );
 }
 
