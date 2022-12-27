@@ -13,25 +13,25 @@ const Footer = lazyLoad("./components/Footer.jsx");
 
 function App() {
   return (
-    <div>
-      <header>
-        <Navbar />
-      </header>
-      <main>
-        <BrowserRouter>
+    <BrowserRouter>
+      <div>
+        <header>
+          <Navbar />
+        </header>
+        <main>
           <Routes>
-            <Route exact strict path = "/" element={<Home/>}/>
-            <Route exact strict path = "/Premium" element={<Premium/>}/>
-            <Route exact strict path = "/Shows" element={<Shows/>}/>
-            <Route exact strict path = "/Movies" element={<Movies/>}/>
-            <Route exact strict path = "/Kids" element={<Kids/>}/>
-            <Route exact strict path = "/Sports" element={<Sports/>}/>
-            <Route exact strict path = "/Channels" element={<Channels/>}/>
+            <Route exact path="/" element={<Home />} />
+            <Route exact path="/Premium" element={<Premium />} />
+            <Route exact path="/Shows" element={<Shows />} />
+            <Route exact path="/Movies" element={<Movies />} />
+            <Route exact path="/Kids" element={<Kids />} />
+            <Route exact path="/Sports" element={<Sports />} />
+            <Route exact path="/Channels" element={<Channels />} />
           </Routes>
-        </BrowserRouter>
-      </main>
-      <Footer />
-    </div>
+        </main>
+        <Footer />
+      </div>
+    </BrowserRouter>
   );
 }
 
