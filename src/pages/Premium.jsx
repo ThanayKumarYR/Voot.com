@@ -1,11 +1,12 @@
 import React from 'react'
 
-const Bigslider = () => {
+const Premium = () => {
   return (
     <div>
-      
+      Premium
+
     </div>
   )
 }
 
-export default Bigslider
+export default Premium

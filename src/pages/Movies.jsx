@@ -1,11 +1,11 @@
 import React from 'react'
 
-const Bigslider = () => {
+const Movies = () => {
   return (
     <div>
-      
+      Movies
     </div>
   )
 }
 
-export default Bigslider
+export default Movies

@@ -1,11 +1,11 @@
 import React from 'react'
 
-const Bigslider = () => {
+const Sports = () => {
   return (
     <div>
-      
+      Sports
     </div>
   )
 }
 
-export default Bigslider
+export default Sports
