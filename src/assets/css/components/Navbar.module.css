@@ -1,3 +1,290 @@
-.navbar{
- background-color: aquamarine;
+:root {
+  --primary: #0d0620;
+  --white: #fff;
+  --lightgrey: #9b98a0;
+  --lightwhite: #ffffff31;
+  --darkgrey: rgba(34, 34, 34, 0.349);
+  --secondary: #7f0dff;
+}
+
+.navbar {
+  background-color: var(--primary);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 80px;
+  height: 40px;
+}
+
+.navLogo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navLogo > input[type="radio"]::before {
+  display: none;
+  position: absolute;
+  content: "☰";
+  height: 20px;
+  width: 20px;
+  color: #fff;
+  font-size: xx-large;
+  margin-top: -7px;
+}
+
+.navLogo .hamberger {
+  display: none;
+  appearance: none;
+  width: 30px;
+  height: 30px;
+  margin: 0 10px;
+  /* background-color: #7f0dff; */
+}
+
+.navLogo .logo {
+  width: 70px;
+  height: 40px;
+}
+
+.navLogo > img {
+  width: 20px;
+  height: 40px;
+}
+
+.navLink {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navLink div {
+  color: var(--white);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navLink > span {
+  font-size: 26px;
+  margin: 0 10px;
+  cursor: pointer;
+  color: var(--white);
+}
+
+.navLink div a {
+  color: var(--lightgrey);
+  height: 50px;
+  margin: 0 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navLink div > a {
+  width: max-content;
+}
+
+.navLink div a span {
+  font-size: 20px;
+  font-weight: 400;
+  padding: 11px 5px;
+}
+.active {
+  border-top: 2px solid var(--secondary);
+}
+
+.active span {
+  color: #fff;
+  background-color: none;
+  animation-name: blink;
+  animation-duration: 0.3s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+}
+
+.navLink .navLinkDiv > div > span {
+  display: none;
+  font-size: 20px;
+  font-weight: 400;
+  padding: 0 15px;
+  color: var(--lightgrey);
+}
+
+.navLink .navLinkDiv > div .toggleSpan {
+  display: none;
+}
+
+.navLink .navLinkDiv > div .toggleSpan input[type="radio"]::before {
+  display: none;
+  position: absolute;
+  content: "✖";
+  color: #fff;
+  font-size: x-large;
+  margin-top: -7px;
+}
+
+.navLink .navLinkDiv > div .toggleSpan input[type="radio"] {
+  display: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  margin-top: 15px;
+}
+
+.navLink .navLinkDiv > div .toggleSpan .logo {
+  display: none;
+}
+
+.navLink .navLinkDiv > div .help {
+  display: none;
+}
+
+@keyframes blink {
+  0% {
+    background-color: var(--lightwhite);
+  }
+  100% {
+    background-color: none;
+  }
+}
+@keyframes slide {
+  0% {
+    left: -278px;
+  }
+  100% {
+    left:0;
+  }
+}
+@keyframes unslide {
+  100% {
+    left: -278px;
+  }
+  0% {
+    left:0;
+  }
+}
+
+@media (width<=1070px) {
+  .navbar {
+    padding: 0 5px;
+  }
+}
+
+@media (width<=940px) {
+  
+  .navLogo .logo {
+    position: absolute;
+    top: 0px;
+    left: 45%;
+  }
+  .navLogo > img {
+    display: none;
+  }
+
+  .navLogo > input[type="radio"]::before {
+    display: block;
+  }
+  .navLogo > input[type="radio"] {
+    display: inline;
+  }
+  .navLink .navLinkDiv {
+    position: absolute;
+    top: 0;
+    left: -278px;
+    height: 100%;
+    width: 0%;
+    background-color: var(--darkgrey);
+  }
+
+  .navbar:has(.navLogo > input[type="radio"]:checked) .navLink .navLinkDiv {
+    left: 0;
+    animation-name: slide;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: 1;
+  }
+
+  .navbar:has(.navLink .navLinkDiv > div .toggleSpan input[type="radio"]:checked ) .navLink .navLinkDiv {
+    animation-name: unslide;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: 1;
+  }
+
+  .navLink .navLinkDiv > div {
+    flex-direction: column;
+    width: 278px;
+    height: 100%;
+    justify-content: center;
+    align-items: flex-start;
+    background-size: 100% auto;
+    background: url("../../images/hamburgerBackground.png");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-color: #0d0620;
+  }
+  .navLink .navLinkDiv > div > span {
+    display: block;
+    width: 278px;
+  }
+
+  .navLink .navLinkDiv > div div {
+    width: 90%;
+    border: 1px solid var(--lightgrey);
+    border-left: none;
+    border-right: none;
+    flex-direction: column;
+    padding: 10px 0;
+    margin: 10px;
+  }
+
+  .navLink .navLinkDiv > div div a {
+    width: 100%;
+    margin: 0 10px;
+  }
+  .navLink.navLinkDiv div div a span {
+    width: 100%;
+    height: 100%;
+    padding: 11px 15px;
+  }
+
+  .navLink .navLinkDiv > div .toggleSpan {
+    display: flex;
+    margin-top: -40px;
+    margin-bottom: 40px;
+    width: 65%;
+    justify-content: space-between;
+    cursor: pointer;
+  }
+
+  .navLink .navLinkDiv > div .toggleSpan input[type="radio"]::before {
+    display: block;
+  }
+  .navLink .navLinkDiv > div .toggleSpan input[type="radio"] {
+    display: inline;
+  }
+
+  .navLink .navLinkDiv > div .toggleSpan .logo {
+    display: inline;
+  }
+
+  .navLink .navLinkDiv > div .help {
+    display: inline;
+  }
+
+  .active {
+    border-top: none;
+    border-left: 5px solid var(--secondary);
+  }
+
+  .userIcon {
+    display: none;
+  }
+}
+
+@media (width<=360px) {
+  .navLogo .logo {
+    left: 59%;
+  }
 }
