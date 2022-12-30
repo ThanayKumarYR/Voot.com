@@ -21,6 +21,10 @@
   opacity: 0.7;
 }
 
+.bigSlider > div img.selected{
+    opacity: 1;
+}
+
 .carousel-root {
   height: min-content;
 }
