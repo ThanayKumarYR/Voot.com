@@ -200,6 +200,7 @@
     height: 100%;
     width: 0%;
     background-color: var(--darkgrey);
+    z-index: 3;
   }
 
   .navbar:has(.navLogo > input[type="radio"]:checked) .navLink .navLinkDiv {
