@@ -8,18 +8,30 @@
   background-color: var(--bigslider);
   margin: 0 auto;
   padding: 30px;
+
   /* outline: 1px solid yellowgreen; */
 }
 
 .bigSlider > div {
   padding: 0px 0px 50px;
   /* outline: 1px solid red; */
+  
 }
 
 .bigSlider > div img {
   padding: 0 8px;
   border-radius: 24px;
   user-select: none;
+  
+}
+
+.bigSlider > div p{
+  color: var(--arrowColor);
+  position: relative;
+  bottom: 30px;
+  right: 150px;
+  font-size: x-large;
+  
 }
 
 .carousel-root {
@@ -30,16 +42,22 @@
     background: var(--dotcolor) !important;
 }
 
-.carousel.carousel-slider .control-arrow{
-    width: 100px;
-}
 
 
 .prevButton,
 .nextButton{
-  outline: 1px solid red;
+  outline: none;
   border: none;
+  position: absolute;
+  height: 100%;
+  top: 0%;
+  padding: 0 80px;
   background-color: transparent;
   color: var(--arrowColor);
-  font-size: 5rem;
+  font-size: 3rem;
+  z-index: 1;
+  cursor: pointer;
+}
+.nextButton{
+  right: 0;
 }
