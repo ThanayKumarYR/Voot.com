@@ -1,0 +1,220 @@
+:root {
+  --primary: #0d0620;
+  --white: #fff;
+  --lightgrey: #9b98a0;
+  --lightwhite: #ffffff31;
+  --darkgrey: rgba(34, 34, 34, 0.349);
+  --secondary: #7f0dff;
+  --footerprim: #2c2542;
+  --footertext: #6b667a;
+  --footertext2: #a3a0ad;
+  --facebook: #4e71a8;
+  --twitter: #1cb7eb;
+  --youtube: #ca3737;
+}
+
+.footer {
+  bottom: 0;
+  width: 100%;
+  background-color: var(--footerprim);
+  padding: 40px;
+}
+
+.footer .footerTop {
+  display: flex;
+  justify-content: center;
+
+  color: var(--white);
+}
+
+.footer .footerTop .fooLinks {
+  width: 97%;
+  display: flex;
+}
+
+.footer .footerTop .fooLinks > img {
+  height: 25px;
+  padding-right: 100px;
+  cursor: pointer;
+}
+
+.footer .footerTop .fooLinks div {
+  display: flex;
+  width: 95%;
+  justify-content: space-evenly;
+}
+
+.footer .footerTop h3 {
+  font-size: small;
+}
+
+.footer .footerTop .fooLinks div ul li {
+  font-size: 14px;
+  margin: 18px 0;
+  cursor: pointer;
+  color: var(--footertext);
+}
+
+.footer .footerTop .fooDownloads div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer .footerTop .fooDownloads div img {
+  margin: 10px 0;
+  cursor: pointer;
+}
+
+.footer .footerTop .fooDownloads p {
+  margin: 10px 0;
+  font-size: 14px;
+  color: var(--footertext2);
+}
+
+.footer .footerTop .fooLinks div ul h3 input[type="radio"]{
+  display: none;
+}
+
+.footer .footerBottom{
+  background-color: var(--footerprim);
+}
+
+.footer .footerBottom div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer .footerBottom div img {
+  margin: 5px;
+  border-radius: 100%;
+  padding: 5px;
+  width: 35px;
+  cursor: pointer;
+}
+
+.footer .footerBottom div img:nth-child(1) {
+  background-color: var(--facebook);
+}
+.footer .footerBottom div img:nth-child(2) {
+  background-color: var(--twitter);
+}
+.footer .footerBottom div img:nth-child(3) {
+  background-color: var(--youtube);
+}
+
+.footer .footerBottom p {
+  color: var(--footertext);
+  padding: 10px;
+  text-align: center;
+}
+
+@media (width<=940px) {
+  .footer .footerTop {
+    flex-wrap: wrap-reverse;
+  }
+
+  .footer .footerTop .fooLinks {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .footer .footerTop .fooLinks > img {
+    margin: 0 0 30px;
+    padding: 0;
+  }
+  .footer .footerTop .fooDownloads {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0 20px;
+    border-bottom: 1px solid var(--lightgrey);
+    margin-bottom: 20px;
+  }
+
+  .footer .footerTop .fooDownloads h3 {
+    width: 100%;
+  }
+  .footer .footerTop .fooDownloads div img {
+    margin: 10px 5px 10px 0;
+  }
+}
+
+@media (width<=490px) {
+  .footer{
+    padding: 10px;
+  }
+  .footer .footerTop .fooLinks {
+    margin-bottom: 20px;
+  }
+  .footer .footerTop .fooLinks div {
+    flex-wrap: wrap;
+    width: 100%;
+
+  }
+  .footer .footerTop .fooLinks div ul {
+    width: 100%;
+  }
+  .footer .footerTop .fooLinks div ul h3 {
+    border-bottom: 1px solid var(--lightgrey);
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 15px;
+  }
+  .footer .footerTop .fooLinks div ul li {
+    display: none;
+  }
+  .footer .footerTop .fooLinks div ul h3 input[type="radio"] {
+    display: block;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    background: url("../../images/show.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    filter: invert(1);
+    transition: all 0.5s ease;
+    margin-top: 5px;
+    transform: rotate(-180deg);
+
+  }
+  
+
+  .footer .footerTop .fooLinks div ul h3 input[type="radio"]:checked {
+    animation-name: rotate;
+    animation-duration: 0.3s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+    transform: rotate(0deg);
+  }
+
+
+  .footer .footerTop .fooLinks div ul:has(h3 input[type="radio"]:checked) li{
+    display: block;
+  }
+  
+  @keyframes rotate {
+   100% {
+      transform: rotate(0deg);
+    }
+    75% {
+      transform: rotate(-45deg);
+    }
+    50% {
+      transform: rotate(-90deg);
+    }
+    25% {
+      transform: rotate(-135deg);
+    }
+    0% {
+      transform: rotate(-180deg);
+    }
+  }
+
+}

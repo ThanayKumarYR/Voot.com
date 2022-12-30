@@ -1,0 +1,11 @@
+.bigSlider{
+    width: 800px;
+    height: 400px;
+    background-color: black;
+    margin: 0 auto;
+}
+
+.bigSlider div img{
+    width: 100px;
+    height: 100px;
+}

@@ -3,17 +3,24 @@ import { NavLink, Outlet } from "react-router-dom";
 import { AiOutlineSearch } from "react-icons/ai";
 import { CgProfile } from "react-icons/cg";
 import Button from "./Button.jsx";
-import logo from "../assets/images/Voot-Logo.svg";
+import Logo from "./Logo";
 import navcss from "../assets/css/components/Navbar.module.css";
-import Menu from './Menu.jsx';
+import Menu from "./Menu.jsx";
 
 const Navbar = () => {
   let activeClassName = navcss.active;
   // Navbar completed succesfully
-  const [isMenu, setIsMenu] = React.useState(true);
-  const [login, setLogin] = React.useState(true);
+  const [isMenu, setIsMenu] = React.useState(false);
+  const [login, setLogin] = React.useState(false);
+  const handleoverflow = ()=>{
+    document.body.style.overflow = "hidden"
+  }
+  const handleflow = ()=>{
+    document.body.style.overflow = "auto"
+  }
   const handlecheck = () => {
     document.getElementById("Cross").checked = true;
+    document.body.style.overflow = "auto"
   };
   return (
     <div className={navcss.navbar}>
@@ -23,9 +30,10 @@ const Navbar = () => {
           name="toggle"
           className={navcss.hamberger}
           id="hamberger"
+          onClick={()=>handleoverflow()}
         />
         <NavLink to="/Voot.com/">
-          <img src={logo} alt="logo" className={navcss.logo} />
+          <Logo/>
         </NavLink>
         <img src="https://www.voot.com/images/upgrade-line.svg" alt="line" />
         <Button />
@@ -34,8 +42,8 @@ const Navbar = () => {
         <div className={navcss.navLinkDiv}>
           <div>
             <span className={navcss.toggleSpan}>
-              <input type="radio" name="toggle" id="Cross"/>
-              <img src={logo} alt="logo" className={navcss.logo} />
+              <input type="radio" name="toggle" id="Cross" onClick={()=>handleflow()} />
+              <Logo/>
             </span>
             <span onClick={() => handlecheck()}>Login</span>
             <div>
@@ -116,31 +124,37 @@ const Navbar = () => {
           <AiOutlineSearch />
         </span>
         <span className={navcss.userIcon}>
-          <CgProfile onClick={() => {
-                    setIsMenu(prev => !prev)
-                }} />
-          <Menu className="profile-menu" menus={!login ? [
+          <CgProfile
+            onClick={() => {
+              setIsMenu((prev) => !prev);
+            }}
+          />
+          <Menu
+            className="profile-menu"
+            menus={
+              !login
+                ? [
                     // name, to path
-                    ['Login', "login"],
-                    ['Help & Legal', 'help']
-                ] : [
-                    [[
-                        'User', "profile",
-                        'Add Proflie', "add_profile"
-                    ]],
-                    ['Manage Profiles', 'add_profiles'],
+                    ["Login", "login"],
+                    ["Help & Legal", "help"],
+                  ]
+                : [
+                    [["User", "profile", "Add Proflie", "add_profile"]],
+                    ["Manage Profiles", "add_profiles"],
                     [
-                        ['Voot Select', 'select'],
-                        ['Billing History', 'select'],
-                        ['Setting', 'settings'],
-                        ['Help & Legal', 'help'],
-                  
+                      ["Voot Select", "select"],
+                      ["Billing History", "select"],
+                      ["Setting", "settings"],
+                      ["Help & Legal", "help"],
                     ],
-                    ['Log out', '/']
-                ]}
-                    open={isMenu}
-                    handleClick={() => { setIsMenu(false) }}
-                />
+                    ["Log out", "/"],
+                  ]
+            }
+            open={isMenu}
+            handleClick={() => {
+              setIsMenu(false);
+            }}
+          />
         </span>
       </div>
       <Outlet />

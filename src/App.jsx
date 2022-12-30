@@ -17,7 +17,7 @@ const Footer = lazyLoad("./components/Footer.jsx");
 function App() {
   
   return (
-    <div className={globle}>
+    <div className={globle.App}>
       <BrowserRouter>
         <header>
           <Navbar />
