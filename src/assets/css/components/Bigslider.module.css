@@ -7,18 +7,12 @@
 .bigSlider {
   background-color: var(--bigslider);
   margin: 0 auto;
-  padding: 30px;
-
   /* outline: 1px solid yellowgreen; */
 }
 
-.bigSlider > div {
-  padding: 0px 0px 50px;
-  /* outline: 1px solid red; */
-  
-}
 
 .bigSlider > div img {
+  /* outline: 1px solid red; */
   padding: 0 8px;
   border-radius: 24px;
   user-select: none;
@@ -28,10 +22,15 @@
 .bigSlider > div p{
   color: var(--arrowColor);
   position: relative;
-  bottom: 30px;
-  right: 150px;
-  font-size: x-large;
-  
+  opacity: 0.9;
+  top: -39px;
+  margin-top: -105px;
+  padding: 105px 30px 15px;
+  font-size: 20px;
+  /* outline: 1px solid rebeccapurple; */
+  text-align: left;
+  box-shadow: rgba(0, 0, 0, 0.8) 0px -150px 46px -58px inset;
+  /* border: 1px solid red; */
 }
 
 .carousel-root {
