@@ -20,6 +20,7 @@ const Bigslider = () => {
       centerMode={true}
       centerSlidePercentage={60}
       showStatus={false}
+      autoFocus={true}
 
     >
       <div>

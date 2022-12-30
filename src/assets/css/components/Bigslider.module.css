@@ -7,12 +7,12 @@
   background-color: var(--bigslider);
   margin: 0 auto;
   padding: 30px;
-  outline: 1px solid yellowgreen;
+  /* outline: 1px solid yellowgreen; */
 }
 
 .bigSlider > div {
   padding: 0px 0px 50px;
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
 }
 
 .bigSlider > div img {
@@ -27,4 +27,8 @@
 
 .carousel .control-dots .dot{
     background: var(--dotcolor) !important;
+}
+
+.carousel.carousel-slider .control-arrow{
+    width: 100px;
 }
