@@ -25,13 +25,13 @@ function App() {
         <main>
           <Suspense fallback={<h1>Loading...</h1>}>
             <Routes>
-              <Route exact path="/Voot.com/" element={<Home />} />
-              <Route exact path="/Voot.com/Premium" element={<Premium />} />
-              <Route exact path="/Voot.com/Shows" element={<Shows />} />
-              <Route exact path="/Voot.com/Movies" element={<Movies />} />
-              <Route exact path="/Voot.com/Kids" element={<Kids />} />
-              <Route exact path="/Voot.com/Sports" element={<Sports />} />
-              <Route exact path="/Voot.com/Channels" element={<Channels />} />
+              <Route exact path="/" element={<Home />} />
+              <Route exact path="/Premium" element={<Premium />} />
+              <Route exact path="/Shows" element={<Shows />} />
+              <Route exact path="/Movies" element={<Movies />} />
+              <Route exact path="/Kids" element={<Kids />} />
+              <Route exact path="/Sports" element={<Sports />} />
+              <Route exact path="/Channels" element={<Channels />} />
             </Routes>
           </Suspense>
         </main>

@@ -1,11 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
 import bigcss from "../assets/css/components/Bigslider.module.css";
 import { TfiAngleLeft, TfiAngleRight } from "react-icons/tfi";
 import Data from "../data/Bigsliderdata.json";
 const Bigslider = () => {
-  const showImages = Data.map((item) => {
+  const ShowImages = Data.map((item) => {
     return (
       <div key={item.id}>
         <img src={item.img} alt="BigsliderImage" />
@@ -45,7 +45,7 @@ const Bigslider = () => {
         );
       }}
     >
-      {showImages}
+      {ShowImages}
     </Carousel>
   );
 };

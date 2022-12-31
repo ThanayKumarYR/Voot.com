@@ -32,7 +32,7 @@ const Navbar = () => {
           id="hamberger"
           onClick={()=>handleoverflow()}
         />
-        <NavLink to="/Voot.com/">
+        <NavLink to="/">
           <Logo/>
         </NavLink>
         <img src="https://www.voot.com/images/upgrade-line.svg" alt="line" />
@@ -48,7 +48,7 @@ const Navbar = () => {
             <span onClick={() => handlecheck()}>Login</span>
             <div>
               <NavLink
-                to="/Voot.com/"
+                to="/"
                 className={({ isActive }) =>
                   isActive ? activeClassName : undefined
                 }
@@ -57,7 +57,7 @@ const Navbar = () => {
                 <span>My Voot</span>
               </NavLink>
               <NavLink
-                to="/Voot.com/Premium"
+                to="/Premium"
                 className={({ isActive }) =>
                   isActive ? activeClassName : undefined
                 }
@@ -66,7 +66,7 @@ const Navbar = () => {
                 <span>Premium</span>
               </NavLink>
               <NavLink
-                to="/Voot.com/Sports"
+                to="/Sports"
                 className={({ isActive }) =>
                   isActive ? activeClassName : undefined
                 }
@@ -75,7 +75,7 @@ const Navbar = () => {
                 <span>Sports</span>
               </NavLink>
               <NavLink
-                to="/Voot.com/Shows"
+                to="/Shows"
                 className={({ isActive }) =>
                   isActive ? activeClassName : undefined
                 }
@@ -84,7 +84,7 @@ const Navbar = () => {
                 <span>Shows</span>
               </NavLink>
               <NavLink
-                to="/Voot.com/Movies"
+                to="/Movies"
                 className={({ isActive }) =>
                   isActive ? activeClassName : undefined
                 }
@@ -93,7 +93,7 @@ const Navbar = () => {
                 <span>Movies</span>
               </NavLink>
               <NavLink
-                to="/Voot.com/Kids"
+                to="/Kids"
                 className={({ isActive }) =>
                   isActive ? activeClassName : undefined
                 }
@@ -102,7 +102,7 @@ const Navbar = () => {
                 <span>Kids</span>
               </NavLink>
               <NavLink
-                to="/Voot.com/Channels"
+                to="/Channels"
                 className={({ isActive }) =>
                   isActive ? activeClassName : undefined
                 }

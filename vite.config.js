@@ -9,5 +9,8 @@ export default defineConfig({
       localsConvention:'camelCase',
       generateScopedName: '[local]_[hash:base64:2]',
     }
+    server: {
+      origin: 'http://127.0.0.1:8080',
+    },
   }
 });
