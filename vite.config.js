@@ -1,5 +1,7 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
+import dns from 'dns'
+dns.setDefaultResultOrder('verbatim')
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -9,8 +11,6 @@ export default defineConfig({
       localsConvention:'camelCase',
       generateScopedName: '[local]_[hash:base64:2]',
     }
-    server: {
-      origin: 'http://127.0.0.1:8080',
-    },
-  }
+  },
+  s
 });
