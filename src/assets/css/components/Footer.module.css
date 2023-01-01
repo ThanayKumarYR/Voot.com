@@ -55,6 +55,14 @@
   color: var(--footertext);
 }
 
+.footer .footerTop .fooLinks div ul li a {
+  color: var(--footertext);
+}
+
+.footer .footerTop .fooLinks div ul li a:hover {
+  color: var(--footertext2);
+}
+
 .footer .footerTop .fooDownloads div {
   display: flex;
   justify-content: space-between;
@@ -73,11 +81,11 @@
   color: var(--footertext2);
 }
 
-.footer .footerTop .fooLinks div ul h3 input[type="radio"]{
+.footer .footerTop .fooLinks div ul h3 input[type="radio"] {
   display: none;
 }
 
-.footer .footerBottom{
+.footer .footerBottom {
   background-color: var(--footerprim);
 }
 
@@ -87,7 +95,7 @@
   align-items: center;
 }
 
-.footer .footerBottom div img {
+.footer .footerBottom div a img {
   margin: 5px;
   border-radius: 100%;
   padding: 5px;
@@ -95,13 +103,13 @@
   cursor: pointer;
 }
 
-.footer .footerBottom div img:nth-child(1) {
+.footer .footerBottom div a:nth-child(1) img {
   background-color: var(--facebook);
 }
-.footer .footerBottom div img:nth-child(2) {
+.footer .footerBottom div a:nth-child(2) img {
   background-color: var(--twitter);
 }
-.footer .footerBottom div img:nth-child(3) {
+.footer .footerBottom div a:nth-child(3) img {
   background-color: var(--youtube);
 }
 
@@ -144,7 +152,7 @@
 }
 
 @media (width<=490px) {
-  .footer{
+  .footer {
     padding: 10px;
   }
   .footer .footerTop .fooLinks {
@@ -153,7 +161,6 @@
   .footer .footerTop .fooLinks div {
     flex-wrap: wrap;
     width: 100%;
-
   }
   .footer .footerTop .fooLinks div ul {
     width: 100%;
@@ -182,9 +189,7 @@
     transition: all 0.5s ease;
     margin-top: 5px;
     transform: rotate(-180deg);
-
   }
-  
 
   .footer .footerTop .fooLinks div ul h3 input[type="radio"]:checked {
     animation-name: rotate;
@@ -194,13 +199,12 @@
     transform: rotate(0deg);
   }
 
-
-  .footer .footerTop .fooLinks div ul:has(h3 input[type="radio"]:checked) li{
+  .footer .footerTop .fooLinks div ul:has(h3 input[type="radio"]:checked) li {
     display: block;
   }
-  
+
   @keyframes rotate {
-   100% {
+    100% {
       transform: rotate(0deg);
     }
     75% {
@@ -216,5 +220,4 @@
       transform: rotate(-180deg);
     }
   }
-
 }

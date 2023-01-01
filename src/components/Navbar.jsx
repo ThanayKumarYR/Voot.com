@@ -8,20 +8,19 @@ import navcss from "../assets/css/components/Navbar.module.css";
 import Menu from "./Menu.jsx";
 
 const Navbar = () => {
-  
   let activeClassName = navcss.active;
   // Navbar completed succesfully
   const [isMenu, setIsMenu] = React.useState(false);
   const [login, setLogin] = React.useState(false);
-  const handleoverflow = ()=>{
-    document.body.style.overflow = "hidden"
-  }
-  const handleflow = ()=>{
-    document.body.style.overflow = "auto"
-  }
+  const handleoverflow = () => {
+    document.body.style.overflow = "hidden";
+  };
+  const handleflow = () => {
+    document.body.style.overflow = "auto";
+  };
   const handlecheck = () => {
     document.getElementById("Cross").checked = true;
-    document.body.style.overflow = "auto"
+    document.body.style.overflow = "auto";
   };
   return (
     <div className={navcss.navbar}>
@@ -31,20 +30,29 @@ const Navbar = () => {
           name="toggle"
           className={navcss.hamberger}
           id="hamberger"
-          onClick={()=>handleoverflow()}
+          onClick={() => handleoverflow()}
         />
         <NavLink to="/">
-          <Logo/>
+          <Logo />
         </NavLink>
         <img src="https://www.voot.com/images/upgrade-line.svg" alt="line" />
-        <Button />
+        <a href="https://www.voot.com/subscription">
+          <Button />
+        </a>
       </div>
       <div className={navcss.navLink}>
         <div className={navcss.navLinkDiv}>
           <div>
             <span className={navcss.toggleSpan}>
-              <input type="radio" name="toggle" id="Cross" onClick={()=>handleflow()} />
-              <Logo/>
+              <input
+                type="radio"
+                name="toggle"
+                id="Cross"
+                onClick={() => handleflow()}
+              />
+              <NavLink to="/">
+                <Logo />
+              </NavLink>
             </span>
             <span onClick={() => handlecheck()}>Login</span>
             <div>
