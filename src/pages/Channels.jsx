@@ -1,8 +1,11 @@
 import React from 'react'
-
+import Bigslider from "../components/Bigslider";
+import Data from '../data/Channels/Bigsliderdata.json'
 const Channels = () => {
   return (
-    <div>Channels</div>
+    <div>
+      <Bigslider Data={Data} />
+    </div>
   )
 }
 

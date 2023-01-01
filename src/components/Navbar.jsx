@@ -8,6 +8,7 @@ import navcss from "../assets/css/components/Navbar.module.css";
 import Menu from "./Menu.jsx";
 
 const Navbar = () => {
+  
   let activeClassName = navcss.active;
   // Navbar completed succesfully
   const [isMenu, setIsMenu] = React.useState(false);

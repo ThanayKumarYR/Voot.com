@@ -12,5 +12,7 @@ export default defineConfig({
       generateScopedName: '[local]_[hash:base64:2]',
     }
   },
-  s
+  server:{
+    host:true
+  }
 });
