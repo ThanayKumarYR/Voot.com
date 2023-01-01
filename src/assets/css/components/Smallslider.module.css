@@ -1,0 +1,97 @@
+.items {
+  /* background-color: yellow; */
+  /* outline: 1px solid red; */
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center center;
+  width: 100% ;
+  height: 300px;
+  border-radius: 14px;
+  margin: 1px;
+  cursor: pointer;
+  transition: all 1s ease-in-out;
+}
+
+.items:hover{
+  background-size: 110%;
+}
+
+@media (width<=1280px) {
+  .items {
+    height: 280px;
+  }
+}
+@media (width<=1075px) {
+  .items {
+    height: 230px;
+  }
+}
+
+@media (width<=926px){
+  .items {
+    height: 200px;
+  }
+}
+
+@media (width<=820px){
+  .items {
+    height: 175px;
+  }
+}
+
+@media (width<=768px){
+  .items {
+    height: 150px;
+    border-radius: 10px;
+  }
+}
+@media (width<=620px){
+  .items {
+    height: 120px;
+  }
+}
+
+@media (width<=540px){
+  .items {
+    height: 100px;
+  }
+}
+
+@media (width<=500px){
+  .items {
+    height: 90px;
+  }
+}
+
+@media (width<=430px){
+  .items {
+    height: 70px;
+  }
+}
+
+@media (width<420px){
+  .items {
+    height: 185px;
+  }
+}
+
+@media (width<=375px){
+  .items {
+    height: 168px;
+  }
+}
+@media (width<=330px){
+  .items {
+    height: 150px;
+  }
+}
+@media (width<=300px){
+  .items {
+    height: 135px;
+  }
+}
+@media (width<=280px){
+  .items {
+    height: 125px;
+  }
+}

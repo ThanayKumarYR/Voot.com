@@ -11,10 +11,7 @@ const Sports = lazyLoad("./pages/Sports.jsx");
 const Channels = lazyLoad("./pages/Channels.jsx");
 const Navbar = lazyLoad("./components/Navbar.jsx");
 const Footer = lazyLoad("./components/Footer.jsx");
-
 function App() {
-  
-
   return (
     <div className={globle.App}>
       <BrowserRouter>
@@ -22,7 +19,13 @@ function App() {
           <Navbar />
         </header>
         <main>
-          <Suspense fallback={<div className={globle.spinner}></div>}>
+          <Suspense
+            fallback={
+              <div className={globle.loading}>
+                <div className={globle.spinner}></div>
+              </div>
+            }
+          >
             <Routes>
               <Route exact path="/" element={<Home />} />
               <Route exact path="/Premium" element={<Premium />} />

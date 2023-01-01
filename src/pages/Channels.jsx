@@ -1,12 +1,6 @@
-import React from 'react'
-import Bigslider from "../components/Bigslider";
-import Data from '../data/Channels/Bigsliderdata.json'
+import React from "react";
 const Channels = () => {
-  return (
-    <div>
-      <Bigslider Data={Data} />
-    </div>
-  )
-}
+  return <div>Channels</div>;
+};
 
-export default Channels
+export default Channels;

@@ -1,6 +1,7 @@
 import React from 'react'
-import Bigslider from "../components/Bigslider";
 import Data from '../data/Kids/Bigsliderdata.json'
+import { lazyLoad } from "../lazyload";
+const Bigslider = lazyLoad("./components/Bigslider.jsx");
 const Kids = () => {
   return (
     <div>
