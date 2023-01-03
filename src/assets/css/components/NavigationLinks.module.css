@@ -1,0 +1,32 @@
+.navigationLinks{
+    /* outline: 1px solid yellow; */
+    padding: 10px;
+    padding-left: 35px;
+    width: 100%;
+    overflow-x: auto;
+}
+
+.navigationLinks::-webkit-scrollbar{
+    width: 0;
+    height: 0;
+}
+
+.navigationLinks a{
+    color: var(--white);
+    border: 1px solid var(--white);
+    padding: 5px 20px;
+    margin: 5px ;
+    border-radius: 20px;
+    font-size:large;
+}
+
+@media (width<=768px) {
+    .navigationLinks a{
+        font-size: medium;
+    }
+}
+@media (width<=480px) {
+    .navigationLinks a{
+        font-size: smaller;
+    }
+}
