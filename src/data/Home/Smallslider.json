@@ -1,52 +1,132 @@
-[
+{
+    "India's Top-Rated Originals":[
     {
-        "id":1,
-        "img":"https://v3img.voot.com/resizeMedium,w_720,h_1080/v3Storage/assets/artboard%201%20copy%205-1672146759977.jpg"
-
+      "id": 1,
+      "img": "https://v3img.voot.com/resizeMedium,w_720,h_1080/v3Storage/assets/apharan-2_2x3-1665303168736.jpg"
     },
     {
-        "id":2,
-        "img":"https://v3img.voot.com/resizeMedium,w_720,h_1080/v3Storage/assets/artboard%201%20copy-1672146659423.jpg"
-
+      "id": 2,
+      "img": "https://v3img.voot.com/resizeMedium,w_720,h_1080/v3Storage/assets/code-m_2x3-1665302909143.jpg"
     },
     {
-        "id":3,
-        "img":"https://v3img.voot.com/resizeMedium,w_720,h_1080/v3Storage/assets/artboard%201%20copy%202-1672146673244.jpg"
-
+      "id": 3,
+      "img": "https://v3img.voot.com/resizeMedium,w_720,h_1080/v3Storage/assets/london%20files%20-%202x3-1660741215624.jpg"
     },
     {
-        "id":4,
-        "img":"https://v3img.voot.com/resizeMedium,w_720,h_1080/v3Storage/assets/artboard%201%20copy%204-1672146686083.jpg"
-
+      "id": 4,
+      "img": "https://v3img.voot.com/resizeMedium,w_720,h_1080/v3Storage/assets/aadha-ishq-2x3-1656335735397.jpg"
     },
     {
-        "id":5,
-        "img":"https://v3img.voot.com/resizeMedium,w_720,h_1080/v3Storage/assets/artboard%201%20copy%203-1672146700229.jpg"
-
+      "id": 5,
+      "img": "https://v3img.voot.com/resizeMedium,w_720,h_1080/v3Storage/assets/bmtd_limited-period_2x3-1670853397754.jpg"
     },
     {
-        "id":6,
-        "img":"https://v3img.voot.com/resizeMedium,w_720,h_1080/v3Storage/assets/artboard%201%20copy%206-1672146716919.jpg"
-
+      "id": 6,
+      "img": "https://v3img.voot.com/resizeMedium,w_720,h_1080/v3Storage/assets/asur-2x3-1656335660179.jpg"
     },
     {
-        "id":7,
-        "img":"https://v3img.voot.com/resizeMedium,w_720,h_1080/v3Storage/assets/kavaludari-1672146731082.jpg"
-
+      "id": 7,
+      "img": "https://v3img.voot.com/resizeMedium,w_720,h_1080/v3Storage/assets/tgg_2x3-1665322744601.jpg"
     },
     {
-        "id":8,
-        "img":"https://v3img.voot.com/resizeMedium,w_720,h_1080/v3Storage/assets/mvm_04-1671349239519.jpg"
-
+      "id": 8,
+      "img": "https://v3img.voot.com/resizeMedium,w_720,h_1080/v3Storage/assets/the-great-wedding-of-munnes_2x3-1665320215379.jpg"
     },
     {
-        "id":9,
-        "img":"https://v3img.voot.com/resizeMedium,w_720,h_1080/v3Storage/assets/mvm_01-1671349026466.jpg"
-
+      "id": 9,
+      "img": "https://v3img.voot.com/resizeMedium,w_720,h_1080/v3Storage/assets/raikar-case-2x3-720x1080-1646136557833.jpg"
     },
     {
-        "id":10,
-        "img":"https://v3img.voot.com/resizeMedium,w_720,h_1080/v3Storage/assets/mvm_02-1671349037527.jpg"
-
+      "id": 10,
+      "img": "https://v3img.voot.com/resizeMedium,w_720,h_1080/v3Storage/assets/illegal%20-%202x3-1660740723734.jpg"
+    },
+    {
+      "id": 11,
+      "img": "https://v3img.voot.com/resizeMedium,w_720,h_1080/v3Storage/assets/hpn-2x3-1656335648554.jpg"
+    },
+    {
+      "id": 12,
+      "img": "https://v3img.voot.com/resizeMedium,w_720,h_1080/v3Storage/assets/candy-2x3-1656335825519.jpg"
     }
-]
+  ],
+    "Top Kannada Hits":[
+    {
+      "id": 1,
+      "img": "https://v3img.voot.com/resizeMedium,w_720,h_1080/v3Storage/assets/artboard%201%20copy%205-1672146759977.jpg"
+    },
+    {
+      "id": 2,
+      "img": "https://v3img.voot.com/resizeMedium,w_720,h_1080/v3Storage/assets/artboard%201%20copy-1672146659423.jpg"
+    },
+    {
+      "id": 3,
+      "img": "https://v3img.voot.com/resizeMedium,w_720,h_1080/v3Storage/assets/artboard%201%20copy%202-1672146673244.jpg"
+    },
+    {
+      "id": 4,
+      "img": "https://v3img.voot.com/resizeMedium,w_720,h_1080/v3Storage/assets/artboard%201%20copy%204-1672146686083.jpg"
+    },
+    {
+      "id": 5,
+      "img": "https://v3img.voot.com/resizeMedium,w_720,h_1080/v3Storage/assets/artboard%201%20copy%203-1672146700229.jpg"
+    },
+    {
+      "id": 6,
+      "img": "https://v3img.voot.com/resizeMedium,w_720,h_1080/v3Storage/assets/artboard%201%20copy%206-1672146716919.jpg"
+    },
+    {
+      "id": 7,
+      "img": "https://v3img.voot.com/resizeMedium,w_720,h_1080/v3Storage/assets/kavaludari-1672146731082.jpg"
+    }
+  ],
+    "Crime, Mystery & Investigation":[
+    {
+      "id": 1,
+      "img": "https://v3img.voot.com/resizeMedium,w_720,h_1080/v3Storage/assets/dexter-2x3-1-1669180971806.jpg"
+    },
+    {
+      "id": 2,
+      "img": "https://v3img.voot.com/resizeMedium,w_720,h_1080/v3Storage/assets/asur-2x3-1656335660179.jpg"
+    },
+    {
+      "id": 3,
+      "img": "https://v3img.voot.com/resizeMedium,w_720,h_1080/v3Storage/assets/interrogation-2x3-2%20(1)-1669182044188.jpg"
+    },
+    {
+      "id": 4,
+      "img": "https://v3img.voot.com/resizeMedium,w_720,h_1080/v3Storage/assets/wwk-2x3-1669193053753.jpg"
+    },
+    {
+      "id": 5,
+      "img": "https://v3img.voot.com/resizeMedium,w_720,h_1080/v3Storage/assets/apharan-2_2x3-1665303168736.jpg"
+    },
+    {
+      "id": 6,
+      "img": "https://v3img.voot.com/resizeMedium,w_720,h_1080/v3Storage/assets/tell-me-a-story-2x3-1-1669184070365.jpg"
+    },
+    {
+      "id": 7,
+      "img": "https://v3img.voot.com/resizeMedium,w_720,h_1080/v3Storage/assets/candy_limited-period_2x3-1670853326391.jpg"
+    },
+    {
+      "id": 8,
+      "img": "https://v3img.voot.com/resizeMedium,w_720,h_1080/v3Storage/assets/candy_limited-period_2x3-1670853326391.jpg"
+    },
+    {
+      "id": 9,
+      "img": "https://v3img.voot.com/resizeMedium,w_720,h_1080/v3Storage/assets/candy_limited-period_2x3-1670853326391.jpg"
+    },
+    {
+      "id": 10,
+      "img": "https://v3img.voot.com/resizeMedium,w_720,h_1080/v3Storage/assets/candy_limited-period_2x3-1670853326391.jpg"
+    },
+    {
+      "id": 11,
+      "img": "https://v3img.voot.com/resizeMedium,w_720,h_1080/v3Storage/assets/candy_limited-period_2x3-1670853326391.jpg"
+    },
+    {
+      "id": 12,
+      "img": "https://v3img.voot.com/resizeMedium,w_720,h_1080/v3Storage/assets/candy_limited-period_2x3-1670853326391.jpg"
+    }
+  ]
+}

@@ -4,7 +4,7 @@ import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
 import "../assets/css/components/OwlCarousel.css";
 import slidercss from "../assets/css/components/Smallslider.module.css";
-const Smallslider = ({Data, title, btn }) => {
+const Smallslider = ({Data,title, btn }) => {
   const ShowImages = Data.map((item) => {
     const style = {
       backgroundImage: `url(${item.img})`,

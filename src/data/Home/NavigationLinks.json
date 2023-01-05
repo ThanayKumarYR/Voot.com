@@ -1,8 +1,8 @@
 [
     {
         "id":1,
-        "content":"Hindi",
-        "link":"https://www.voot.com/shows/hindi/2107965"
+        "content":"Sports",
+        "link":"/Sports"
     },
     {
         "id":2,
@@ -21,17 +21,12 @@
     },
     {
         "id":5,
-        "content":"Telugu",
-        "link":"https://www.voot.com/shows/telugu/2129216"
+        "content":"Kids",
+        "link":"/Kids"
     },
     {
         "id":6,
-        "content":"Gujarati",
-        "link":"https://www.voot.com/shows/gujarati/2129219"
-    },
-    {
-        "id":7,
-        "content":"Bengali",
-        "link":"https://www.voot.com/shows/bengali/2129218"
+        "content":"International Shows",
+        "link":"https://www.voot.com/shows/international-shows/107312"
     }
 ]

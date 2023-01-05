@@ -16,14 +16,10 @@ const Home = () => {
     <div className={css.home}>
       <Bigslider Data={BigData} />
       <NavigationLinks Data={LinksData}/>
-      <Smallslider Data={SmallData} title="Hottest International Show" />
-      <Advertisement img={AdvImg.img4}/>
-      <Smallslider Data={SmallData} />
-      <Smallslider
-        Data={SmallData}
-        title="Hottest International Show"
-        btn="none"
-      />
+      <Advertisement img={AdvImg.img1}/>
+      <Smallslider Data={SmallData["India's Top-Rated Originals"]}title="India's Top-Rated Originals 🌟" />
+      <Smallslider Data={SmallData["Top Kannada Hits"]}/>
+      <Smallslider Data={SmallData["Crime, Mystery & Investigation"]} title={"Crime, Mystery & Investigation"}/>
     </div>
   );
 };
