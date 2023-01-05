@@ -20,6 +20,8 @@ const Home = () => {
       <Smallslider Data={SmallData["India's Top-Rated Originals"]}title="India's Top-Rated Originals 🌟" />
       <Smallslider Data={SmallData["Top Kannada Hits"]}/>
       <Smallslider Data={SmallData["Crime, Mystery & Investigation"]} title={"Crime, Mystery & Investigation"}/>
+      <Smallslider Data={SmallData["FREE Blockbusters of the Month"]}title={"FREE Blockbusters of the Month😎🍿"} btn={"none"} />
+      <Smallslider Data={SmallData["Love Island"]} />
     </div>
   );
 };

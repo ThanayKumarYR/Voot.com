@@ -1,5 +1,5 @@
 {
-    "India's Top-Rated Originals":[
+  "India's Top-Rated Originals": [
     {
       "id": 1,
       "img": "https://v3img.voot.com/resizeMedium,w_720,h_1080/v3Storage/assets/apharan-2_2x3-1665303168736.jpg"
@@ -49,7 +49,7 @@
       "img": "https://v3img.voot.com/resizeMedium,w_720,h_1080/v3Storage/assets/candy-2x3-1656335825519.jpg"
     }
   ],
-    "Top Kannada Hits":[
+  "Top Kannada Hits": [
     {
       "id": 1,
       "img": "https://v3img.voot.com/resizeMedium,w_720,h_1080/v3Storage/assets/artboard%201%20copy%205-1672146759977.jpg"
@@ -79,7 +79,7 @@
       "img": "https://v3img.voot.com/resizeMedium,w_720,h_1080/v3Storage/assets/kavaludari-1672146731082.jpg"
     }
   ],
-    "Crime, Mystery & Investigation":[
+  "Crime, Mystery & Investigation": [
     {
       "id": 1,
       "img": "https://v3img.voot.com/resizeMedium,w_720,h_1080/v3Storage/assets/dexter-2x3-1-1669180971806.jpg"
@@ -87,10 +87,6 @@
     {
       "id": 2,
       "img": "https://v3img.voot.com/resizeMedium,w_720,h_1080/v3Storage/assets/asur-2x3-1656335660179.jpg"
-    },
-    {
-      "id": 3,
-      "img": "https://v3img.voot.com/resizeMedium,w_720,h_1080/v3Storage/assets/interrogation-2x3-2%20(1)-1669182044188.jpg"
     },
     {
       "id": 4,
@@ -110,23 +106,95 @@
     },
     {
       "id": 8,
-      "img": "https://v3img.voot.com/resizeMedium,w_720,h_1080/v3Storage/assets/candy_limited-period_2x3-1670853326391.jpg"
+      "img": "https://v3img.voot.com/resizeMedium,w_720,h_1080/v3Storage/assets/london%20files%20-%202x3-1660741215624.jpg"
     },
     {
       "id": 9,
-      "img": "https://v3img.voot.com/resizeMedium,w_720,h_1080/v3Storage/assets/candy_limited-period_2x3-1670853326391.jpg"
+      "img": "https://v3img.voot.com/resizeMedium,w_720,h_1080/v3Storage/assets/tgg_2x3-1665322744601.jpg"
     },
     {
       "id": 10,
-      "img": "https://v3img.voot.com/resizeMedium,w_720,h_1080/v3Storage/assets/candy_limited-period_2x3-1670853326391.jpg"
+      "img": "https://v3img.voot.com/resizeMedium,w_720,h_1080/v3Storage/assets/31-1662496509888.jpg"
     },
     {
       "id": 11,
-      "img": "https://v3img.voot.com/resizeMedium,w_720,h_1080/v3Storage/assets/candy_limited-period_2x3-1670853326391.jpg"
+      "img": "https://v3img.voot.com/resizeMedium,w_720,h_1080/v3Storage/assets/raikar-case-2x3-720x1080-1646136557833.jpg"
     },
     {
-      "id": 12,
-      "img": "https://v3img.voot.com/resizeMedium,w_720,h_1080/v3Storage/assets/candy_limited-period_2x3-1670853326391.jpg"
+      "id": 13,
+      "img": "https://v3img.voot.com/resizeMedium,w_720,h_1080/v3Storage/assets/code-m_2x3-1665302909143.jpg"
+    },
+    {
+      "id": 14,
+      "img": "https://v3img.voot.com/resizeMedium,w_720,h_1080/v3Storage/assets/20-1662487568025.jpg"
+    },
+    {
+      "id": 15,
+      "img": "https://v3img.voot.com/resizeMedium,w_720,h_1080/v3Storage/assets/81-1662517435324.jpg"
+    },
+    {
+      "id": 16,
+      "img": "https://v3img.voot.com/resizeMedium,w_720,h_1080/v3Storage/assets/73-1662517100389.jpg"
+    }
+  ],
+  "FREE Blockbusters of the Month": [
+    {
+      "id": 1,
+      "img": "https://v3img.voot.com/resizeMedium,w_720,h_1080/v3Storage/assets/the-great-weddings-of-munnes-free-2x3-1672546281802.jpg"
+    },
+    {
+      "id": 2,
+      "img": "https://v3img.voot.com/resizeMedium,w_720,h_1080/v3Storage/assets/joru-ka-gulam-free-taag-2x3-1672546505566.jpg"
+    },
+    {
+      "id": 3,
+      "img": "https://v3img.voot.com/resizeMedium,w_720,h_1080/v3Storage/assets/tale-baachkoli-powder-haakolli-free-tag-2x3-1672546455566.jpg"
+    },
+    {
+      "id": 4,
+      "img": "https://v3img.voot.com/resizeMedium,w_720,h_1080/v3Storage/assets/bengaluru-free-tag-2x3-1672639369446.jpg"
+    }
+  ],
+  "Love Island": [
+    {
+      "id": 1,
+      "img": "https://v3img.voot.com/resizeMedium,w_720,h_1080/v3Storage/assets/love%20island%20usa%20-%2001-1670349596468.jpg"
+    },
+    {
+      "id": 2,
+      "img": "https://v3img.voot.com/resizeMedium,w_720,h_1080/v3Storage/assets/love%20island%20australia%20s3%20-%2002-1670349628061.jpg"
+    },
+    {
+      "id": 3,
+      "img": "https://v3img.voot.com/resizeMedium,w_720,h_1080/v3Storage/assets/temptation%20island%20usa%20s2%20-%2003-1670349648525.jpg"
+    },
+    {
+      "id": 4,
+      "img": "https://v3img.voot.com/resizeMedium,w_720,h_1080/v3Storage/assets/big%20brother%20australia%20-%2004-1670349669143.jpg"
+    },
+    {
+      "id": 5,
+      "img": "https://v3img.voot.com/resizeMedium,w_720,h_1080/v3Storage/assets/love%20island%20laid%20bare%20-%2005-1670349691140.jpg"
+    },
+    {
+      "id": 6,
+      "img": "https://v3img.voot.com/resizeMedium,w_720,h_1080/v3Storage/assets/sv_01-1670561660655.jpg"
+    },
+    {
+      "id": 7,
+      "img": "https://v3img.voot.com/resizeMedium,w_720,h_1080/v3Storage/assets/wild%20villa%20%20-%2007-1670349737158.jpg"
+    },
+    {
+      "id": 8,
+      "img": "https://v3img.voot.com/resizeMedium,w_720,h_1080/v3Storage/assets/bigg%20bos%20hindi%20%20-%2008-1670349758440.jpg"
+    },
+    {
+      "id": 9,
+      "img": "https://v3img.voot.com/resizeMedium,w_720,h_1080/v3Storage/assets/bigg%20boss%20kannada%20-%2009-1670349779513.jpg"
+    },
+    {
+      "id": 10,
+      "img": "https://v3img.voot.com/resizeMedium,w_720,h_1080/v3Storage/assets/ex%20or%20next%20-%2010-1670349804629.jpg"
     }
   ]
 }
