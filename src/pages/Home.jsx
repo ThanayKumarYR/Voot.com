@@ -1,7 +1,7 @@
 import React from "react";
 import BigData from "../data/Home/Bigsliderdata.json";
-import SmallData from "../data/Home/Smallslider.json";
 import Bigslider from "../components/Bigslider.jsx";
+import SmallData from "../data/Home/Smallslider.json";
 import Smallslider from "../components/Smallslider.jsx";
 import Advertisement from "../components/Advertisement.jsx";
 import AdvImg from "../data/Home/Advertisement.json"
@@ -22,6 +22,8 @@ const Home = () => {
       <Smallslider Data={SmallData["Crime, Mystery & Investigation"]} title={"Crime, Mystery & Investigation"}/>
       <Smallslider Data={SmallData["FREE Blockbusters of the Month"]}title={"FREE Blockbusters of the Month😎🍿"} btn={"none"} />
       <Smallslider Data={SmallData["Love Island"]} />
+      <Smallslider Data={SmallData["Popular In Sports"]}  title={"Popular In Sports"}/>
+      <Smallslider Data={SmallData["Hottest International Shows"]}  title={"Hottest International Shows"}/>
     </div>
   );
 };
